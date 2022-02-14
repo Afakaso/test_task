@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div>
+        <form action="feedback.php" method="post" name="form">
+            <input required name="name" type="text" placeholder="Имя*"/>
+            <br>
+            <input required name="email"  pattern=".+@gmail\.com" type="text" placeholder="Email*"/>
+            <br>
+            <textarea required cols="32" name="message" rows="5" placeholder="Ваши мысли...*"></textarea>
+            <br>
+            <input type="file" name="Файл">
+            <br>
+            <input required type="submit" value="Отправить"/>
+          </form>
+    </div>
+</body>
+<style>
+textarea {
+    width: 10%;
+    height: 200px;
+    resize: none;
+} 
+</style>
+</html>
